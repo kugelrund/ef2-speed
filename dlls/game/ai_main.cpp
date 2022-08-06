@@ -767,7 +767,7 @@ void BotChangeViewAngles(bot_state_t *bs, float thinktime) {
 		//
 		if (bot_challenge.integer) {
 			//smooth slowdown view model
-			diff = abs(AngleDifference(bs->viewangles[i], bs->ideal_viewangles[i]));
+			diff = fabs(AngleDifference(bs->viewangles[i], bs->ideal_viewangles[i]));
 			anglespeed = diff * factor;
 			if (anglespeed > maxchange) anglespeed = maxchange;
 			bs->viewangles[i] = BotChangeViewAngle(bs->viewangles[i],
@@ -871,7 +871,7 @@ void BotInputToUserCommand(bot_input_t *bi, usercmd_t *ucmd, int delta_angles[3]
 	//set the view independent movement
 	ucmd->forwardmove = (signed char) (DotProduct(forward, bi->dir) * bi->speed);
 	ucmd->rightmove = (signed char) (0 - DotProduct(right, bi->dir) * bi->speed);
-	ucmd->upmove = (signed char) (abs(forward[2]) * bi->dir[2] * bi->speed);
+	ucmd->upmove = (signed char) (fabs(forward[2]) * bi->dir[2] * bi->speed);
 	//normal keyboard movement
 	if (bi->actionflags & ACTION_MOVEFORWARD) ucmd->forwardmove += 127;
 	if (bi->actionflags & ACTION_MOVEBACK) ucmd->forwardmove -= 127;
