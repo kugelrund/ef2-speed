@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "dlls\game\game.vcxproj", "{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Demo Release|x86 = Demo Release|x86
+		Intel Release|x86 = Intel Release|x86
+		Release CDROM|x86 = Release CDROM|x86
+		Release|x86 = Release|x86
+		VTune|x86 = VTune|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Debug|x86.Build.0 = Debug|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Demo Release|x86.ActiveCfg = Demo Release|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Demo Release|x86.Build.0 = Demo Release|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Intel Release|x86.ActiveCfg = Intel Release|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Intel Release|x86.Build.0 = Intel Release|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Release CDROM|x86.ActiveCfg = Release CDROM|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Release CDROM|x86.Build.0 = Release CDROM|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Release|x86.ActiveCfg = Release|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.Release|x86.Build.0 = Release|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.VTune|x86.ActiveCfg = VTune|Win32
+		{D8D2DFB0-8F4D-4274-BFB4-3998294A144F}.VTune|x86.Build.0 = VTune|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C75C36BC-1BB6-4A10-BDC2-BAA09492A7D5}
+	EndGlobalSection
+EndGlobal
