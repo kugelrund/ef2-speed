@@ -1,0 +1,8 @@
+.vs
+
+dlls/Debug
+dlls/Release
+dlls/game/Debug
+dlls/game/Release
+
+Executable
