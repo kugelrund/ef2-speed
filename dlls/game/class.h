@@ -364,21 +364,12 @@ class SafePtr : public SafePtrBase
 		SafePtr& operator=( const SafePtr& obj );
 		SafePtr& operator=( T * const obj );
 
-#ifdef LINUX
-		friend int operator==<>( SafePtr<T> a, T *b );
-		friend int operator!=<>( SafePtr<T> a, T *b );
-		friend int operator==<>( T *a, SafePtr<T> b );
-		friend int operator!=<>( T *a, SafePtr<T> b );
-		friend int operator==<>( SafePtr<T> a, SafePtr<T> b );
-		friend int operator!=<>( SafePtr<T> a, SafePtr<T> b );
-#else
-		friend int operator==( SafePtr<T> a, T *b );
-		friend int operator!=( SafePtr<T> a, T *b );
-		friend int operator==( T *a, SafePtr<T> b );
-		friend int operator!=( T *a, SafePtr<T> b );
-		friend int operator==( SafePtr<T> a, SafePtr<T> b );
-		friend int operator!=( SafePtr<T> a, SafePtr<T> b );
-#endif
+		template <class U> friend int operator==( SafePtr<U> a, U *b );
+		template <class U> friend int operator!=( SafePtr<U> a, U *b );
+		template <class U> friend int operator==( U *a, SafePtr<U> b );
+		template <class U> friend int operator!=( U *a, SafePtr<U> b );
+		template <class U> friend int operator==( SafePtr<U> a, SafePtr<U> b );
+		template <class U> friend int operator!=( SafePtr<U> a, SafePtr<U> b );
 
       operator	T*() const;
 		T* operator->() const;
