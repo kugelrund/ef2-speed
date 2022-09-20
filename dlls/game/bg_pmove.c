@@ -2594,8 +2594,10 @@ void PmoveSingle (pmove_t *pmove)
 
 	// test stuff
 	
-	// snap some parts of playerstate to save network bandwidth
-	SnapVector( pm->ps->velocity );
+	if ( pm->ps->snapVelocity ) {
+		// snap some parts of playerstate to save network bandwidth
+		SnapVector( pm->ps->velocity );
+	}
 
 	// If the player is off the ground cap his xy velocity so he can't strafe-jump and use other cheats
 	//   to go too fast

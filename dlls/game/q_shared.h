@@ -1477,6 +1477,7 @@ typedef struct playerState_s {
 
 	// not communicated over the net at all
 	int			ping;			// server to game info for scoreboard
+	qboolean    snapVelocity;
 } playerState_t;
 
 typedef enum {

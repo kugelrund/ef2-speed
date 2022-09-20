@@ -4348,6 +4348,8 @@ void Player::SetMoveInfo( pmove_t *pm, const usercmd_t *ucmd )
 	// save off pm_runtime
 	if ( pm->ps->pm_runtime )
 		pm_lastruntime = pm->ps->pm_runtime;
+
+	pm->ps->snapVelocity = g_snapVelocity->integer;
 }
 
 pmtype_t Player::GetMovePlayerMoveType( void )
