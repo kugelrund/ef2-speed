@@ -2345,7 +2345,7 @@ void Sentient::ArmorDamage( float damage, Entity *inflictor, Entity *attacker, c
 			
 			normalizedDirection = direction;
 			normalizedDirection.normalize();
-			if ( isClient() && ( attacker == this ) && multiplayerManager.inMultiplayer() )
+			if ( isClient() && ( attacker == this ) && ( multiplayerManager.inMultiplayer() || g_forceMultiplayerKnockback->integer ) )
 				momentum = normalizedDirection * ( 1000.0f * ( float )knockback / m ); // the rocket jump hack...
 			else
 				momentum = normalizedDirection * ( 500.0f * ( float )knockback / m );

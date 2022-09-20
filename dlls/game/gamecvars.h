@@ -168,6 +168,8 @@ extern cvar_t *cg_strafeHelperSpeedX;
 extern cvar_t *cg_strafeHelperSpeedY;
 extern cvar_t *cg_strafeHelperY;
 
+extern cvar_t *g_forceMultiplayerKnockback;
+
 void CVAR_Init( void );
 
 #endif /* !__GAMECVARS_H__ */

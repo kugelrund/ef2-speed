@@ -169,6 +169,8 @@ cvar_t *cg_strafeHelperSpeedX;
 cvar_t *cg_strafeHelperSpeedY;
 cvar_t *cg_strafeHelperY;
 
+cvar_t *g_forceMultiplayerKnockback;
+
 void CVAR_Init( void )
 {
 	
@@ -332,4 +334,6 @@ void CVAR_Init( void )
 	cg_strafeHelperSpeedX			= gi.cvar( "cg_strafeHelperSpeedX",			"0",		CVAR_ARCHIVE );
 	cg_strafeHelperSpeedY			= gi.cvar( "cg_strafeHelperSpeedY",			"0",		CVAR_ARCHIVE );
 	cg_strafeHelperY				= gi.cvar( "cg_strafeHelperY",				"50",		CVAR_ARCHIVE );
+
+	g_forceMultiplayerKnockback		= gi.cvar( "g_forceMultiplayerKnockback",	"0",		CVAR_CHEAT );
 }
