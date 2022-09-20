@@ -76,6 +76,7 @@ consolecmd_t G_ConsoleCmds[] =
 	{ "swapItem",			G_SwapItemCmd,			false },
 	{ "dropItem",			G_DropItemCmd,			false },
 	{ "dialogrunthread",	G_DialogRunThread,		false },
+	{ "toggleviewmodel",    G_ToggleViewModel,      false },
 	{ NULL,					NULL,					NULL }
 };
 
@@ -1359,4 +1360,17 @@ qboolean G_DialogRunThread( const gentity_t *ent )
 	}
 
 	return G_ClientRunThreadCmd( ent );
+}
+
+
+//-----------------------------------------------------
+//-----------------------------------------------------
+qboolean G_ToggleViewModel( const gentity_t *ent )
+{
+	if (gi.cvar_get("r_drawviewmodel")->integer) {
+		gi.cvar_set("r_drawviewmodel", "0");
+	} else {
+		gi.cvar_set("r_drawviewmodel", "1");
+	}
+	return true;
 }

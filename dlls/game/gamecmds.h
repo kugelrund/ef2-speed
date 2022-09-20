@@ -64,5 +64,6 @@ qboolean G_PurchaseSkillCmd( const gentity_t *ent );
 qboolean G_SwapItemCmd( const gentity_t *ent );
 qboolean G_DropItemCmd( const gentity_t *ent );
 qboolean G_DialogRunThread( const gentity_t *ent );
+qboolean G_ToggleViewModel( const gentity_t *ent );
 
 #endif /* !__GAMECMDS_H__ */
