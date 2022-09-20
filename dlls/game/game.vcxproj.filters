@@ -35,6 +35,12 @@
       <UniqueIdentifier>{dec0b848-ce97-441e-b36b-6235561795f0}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
+    <Filter Include="Source Files\speedrun">
+      <UniqueIdentifier>{a153207a-8629-4e8e-8a32-90a3da4f4719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\speedrun\strafe_helper">
+      <UniqueIdentifier>{5f21fd2a-3691-4013-bf53-7725a41c2a99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="changePosture.cpp">
@@ -519,6 +525,12 @@
     </ClCompile>
     <ClCompile Include="worldspawn.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="speedrun\strafe_helper\strafe_helper.c">
+      <Filter>Source Files\speedrun\strafe_helper</Filter>
+    </ClCompile>
+    <ClCompile Include="speedrun\strafe_helper_customization.cpp">
+      <Filter>Source Files\speedrun</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1070,6 +1082,15 @@
     </ClInclude>
     <ClInclude Include="worldspawn.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="speedrun\strafe_helper\strafe_helper.h">
+      <Filter>Source Files\speedrun\strafe_helper</Filter>
+    </ClInclude>
+    <ClInclude Include="speedrun\strafe_helper\strafe_helper_customization.h">
+      <Filter>Source Files\speedrun\strafe_helper</Filter>
+    </ClInclude>
+    <ClInclude Include="speedrun\strafe_helper_includes.h">
+      <Filter>Source Files\speedrun</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

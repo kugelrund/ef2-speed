@@ -42,6 +42,8 @@
 #include "teammateroster.hpp"
 #include <qcommon/gameplaymanager.h>
 
+#include "speedrun/strafe_helper/strafe_helper.h"
+
 //Forward
 //Back
 //TurnRight
@@ -8877,6 +8879,17 @@ void Player::UpdateStats( void )
 	if ( actor_camera )
 		client->ps.stats[ STAT_CINEMATIC ] += (1<<1);
 	
+	StrafeHelperParams params;
+	params.center = cg_strafeHelperCenter->integer;
+	params.center_marker = cg_strafeHelperCenterMarker->integer;
+	params.scale = cg_strafeHelperScale->value;
+	params.height = cg_strafeHelperHeight->value;
+	params.y = cg_strafeHelperY->value;
+	params.speed_scale = cg_strafeHelperSpeedScale->value;
+	params.speed_x = cg_strafeHelperSpeedX->value;
+	params.speed_y = cg_strafeHelperSpeedY->value;
+	StrafeHelper_Draw( &params, SCREEN_WIDTH, SCREEN_HEIGHT );
+
 	// Go through all the player's weapons and send over the indexes of the names
 	memset( client->ps.inventory_name_index, 0, sizeof( client->ps.inventory_name_index ) );
 	memset( client->ps.ammo_in_clip, 0, sizeof(client->ps.ammo_in_clip));

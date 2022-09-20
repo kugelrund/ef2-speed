@@ -16,6 +16,7 @@
 
 #include "q_shared.h"
 #include "bg_public.h"
+#include "speedrun/strafe_helper/strafe_helper.h"
 
 // all of the locals will be zeroed before each
 // pmove, just to make sure we don't have
@@ -653,6 +654,12 @@ void PM_Accelerate
 	float	addspeed;
    float accelspeed;
    float currentspeed;
+
+	if ( pm->ps->clientNum == 0 )
+		{
+		StrafeHelper_SetAccelerationValues( pml.forward, pm->ps->velocity, wishdir,
+		                                    wishspeed, accel, pml.frametime );
+		}
 
 	currentspeed = DotProduct( pm->ps->velocity, wishdir );
 	addspeed = wishspeed - currentspeed;

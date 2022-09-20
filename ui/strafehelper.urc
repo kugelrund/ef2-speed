@@ -1,0 +1,46 @@
+menu "strafehelper" 640 480 NONE 0
+bgcolor 0 0 0 0
+hideDuringLoad
+depth 0.4
+
+resource
+Label
+{
+ordernumber 1
+name "strafehelper_accelerating"
+rect 0 0 0 0
+fgcolor 			0.00 0.00 0.00 0.00
+bgcolor 			0.00 0.50 0.13 0.38
+}
+
+resource
+Label
+{
+ordernumber 2
+name "strafehelper_optimal"
+rect 0 0 0 0
+fgcolor 			0.00 0.00 0.00 0.00
+bgcolor 			0.00 1.00 0.25 0.75
+}
+
+resource
+Label
+{
+ordernumber 3
+name "strafehelper_centermarker"
+rect 0 0 0 0
+fgcolor 			0.00 0.00 0.00 0.00
+bgcolor 			1.00 1.00 1.00 0.75
+}
+
+resource
+Label
+{
+name "strafehelper_speed"
+rect 300 300 40 20
+fgcolor 			1.00 1.00 1.00 1.00
+bgcolor 			0.00 0.00 0.00 0.00
+font serpentinemedium-8
+}
+
+end.

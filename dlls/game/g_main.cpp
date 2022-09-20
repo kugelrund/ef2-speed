@@ -1794,6 +1794,9 @@ extern "C" void G_ClientBegin( gentity_t *ent, const usercmd_t *cmd )
 			
 			GameplayManager::getTheGameplayManager()->processPendingMessages();
 			G_SentInitialMessages( );
+
+			const auto player = static_cast<Player*>(ent->entity);
+			player->addHud("strafehelper");
 		}
 	}
 	

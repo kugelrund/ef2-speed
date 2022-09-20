@@ -158,6 +158,16 @@ extern cvar_t *mp_currentPosInMapList;
 extern	cvar_t	*sv_showinfo;
 extern	cvar_t	*sv_showinfodist;
 
+extern cvar_t *cg_drawStrafeHelper;
+extern cvar_t *cg_strafeHelperCenter;
+extern cvar_t *cg_strafeHelperCenterMarker;
+extern cvar_t *cg_strafeHelperHeight;
+extern cvar_t *cg_strafeHelperScale;
+extern cvar_t *cg_strafeHelperSpeedScale;
+extern cvar_t *cg_strafeHelperSpeedX;
+extern cvar_t *cg_strafeHelperSpeedY;
+extern cvar_t *cg_strafeHelperY;
+
 void CVAR_Init( void );
 
 #endif /* !__GAMECVARS_H__ */

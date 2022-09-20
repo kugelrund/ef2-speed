@@ -1269,6 +1269,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release CDROM|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release CDROM|Win32'">_pch_cpp.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="speedrun\strafe_helper\strafe_helper.c" />
+    <ClCompile Include="speedrun\strafe_helper_customization.cpp" />
     <ClCompile Include="stationaryFireCombat.cpp" />
     <ClCompile Include="stationaryFireCombatEX.cpp" />
     <ClCompile Include="stationaryvehicle.cpp" />
@@ -1539,6 +1541,9 @@
     <ClInclude Include="soundman.h" />
     <ClInclude Include="spawners.h" />
     <ClInclude Include="specialfx.h" />
+    <ClInclude Include="speedrun\strafe_helper\strafe_helper.h" />
+    <ClInclude Include="speedrun\strafe_helper\strafe_helper_customization.h" />
+    <ClInclude Include="speedrun\strafe_helper_includes.h" />
     <ClInclude Include="stack.h" />
     <ClInclude Include="stationaryFireCombat.hpp" />
     <ClInclude Include="stationaryFireCombatEX.hpp" />

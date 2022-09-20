@@ -159,6 +159,16 @@ cvar_t *mp_minTauntTime;
 cvar_t *sv_showinfo;
 cvar_t *sv_showinfodist;
 
+cvar_t *cg_drawStrafeHelper;
+cvar_t *cg_strafeHelperCenter;
+cvar_t *cg_strafeHelperCenterMarker;
+cvar_t *cg_strafeHelperHeight;
+cvar_t *cg_strafeHelperScale;
+cvar_t *cg_strafeHelperSpeedScale;
+cvar_t *cg_strafeHelperSpeedX;
+cvar_t *cg_strafeHelperSpeedY;
+cvar_t *cg_strafeHelperY;
+
 void CVAR_Init( void )
 {
 	
@@ -312,4 +322,14 @@ void CVAR_Init( void )
 	
 	sv_showinfo	    				= gi.cvar( "sv_showinfo",					"0",		0 );
 	sv_showinfodist					= gi.cvar( "sv_showinfodist",				"256",		0 );
+
+	cg_drawStrafeHelper				= gi.cvar( "cg_drawStrafeHelper",			"0",		CVAR_ARCHIVE );
+	cg_strafeHelperCenter			= gi.cvar( "cg_strafeHelperCenter",			"1",		CVAR_ARCHIVE );
+	cg_strafeHelperCenterMarker		= gi.cvar( "cg_strafeHelperCenterMarker",	"1",		CVAR_ARCHIVE );
+	cg_strafeHelperHeight			= gi.cvar( "cg_strafeHelperHeight",			"20",		CVAR_ARCHIVE );
+	cg_strafeHelperScale			= gi.cvar( "cg_strafeHelperScale",			"4",		CVAR_ARCHIVE );
+	cg_strafeHelperSpeedScale		= gi.cvar( "cg_strafeHelperSpeedScale",		"0.9",		CVAR_ARCHIVE );
+	cg_strafeHelperSpeedX			= gi.cvar( "cg_strafeHelperSpeedX",			"0",		CVAR_ARCHIVE );
+	cg_strafeHelperSpeedY			= gi.cvar( "cg_strafeHelperSpeedY",			"0",		CVAR_ARCHIVE );
+	cg_strafeHelperY				= gi.cvar( "cg_strafeHelperY",				"50",		CVAR_ARCHIVE );
 }
